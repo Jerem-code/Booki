@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <img src="./Images/logo/Booki.png" alt="logo de Booki" id="logo">
+            <nav>
+                <a href="#">Hébergements</a>
+                <a href="#">Activités</a>
+            </nav>
+        </header>
+        <main>
+            <section id="section1">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
+                <!-- Recherche -->
+                <form>
+                    <div class="search-bar">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <input type="text" name="Ville" placeholder="Ville, Pays" value="Marseille, France">
+                        <button id="rechercher-desktop">Rechercher</button>
+                        <button id="rechercher-mobile"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+                <!-- Fin de la recherche -->
+                <!-- Filtres -->
+                <div class="filtres">
+                    <h2>Filtres</h2>
+                    <div class="filtre-boutons">
+                        <button class="filtre-btn"><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
+                        <button class="filtre-btn"><i class="fa-solid fa-person"></i>Familial</button>
+                        <button class="filtre-btn"><i class="fa-solid fa-heart"></i>Romantique</button>
+                        <button class="filtre-btn"><i class="fa-solid fa-fire"></i>Nos pépites</button>
+                    </div>
+                </div>
+                <!-- Fin des filtres -->
+                <div class="info-container">
+                    <i class="fa-solid fa-info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </section>
+            <section>
+                <div class="hebergements-populaires">
+                    <section class="hebergements">
+                        <h2>Hébergements à Marseille</h2>
+                        <div class="hebergements-cartes">
+                            <a href="#" class="carte-cliquable">
+                                <article>
+                                    <img src="./Images/hebergements/fred-kleber.jpg" alt="Photo d'un hébergement">
+                                    <div class="carte-contenu">
+                                        <div class="carte-texte">
+                                            <h3 class="carte-titre">Hôtel du port</h3>
+                                            <p class="carte-description">Nuit à partir de 52<span class="devise">€</span></p>
+                                        </div>
+                                        <div class="carte-note">
+                                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+                            <!-- Insérer le logement hôtel chez Amina avec photo febrian-zakaria.jpg-->
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </main>
+    <footer></footer>
+    </div>
+</body>
+
+</html>
