@@ -24,9 +24,9 @@ a {
     color: var(--noir);
 }
 
- i {
-    color: var(--bleu);
- }
+ /*i {
+    color: var(--white);
+ } */
 
  ul {
     list-style: none;
@@ -331,6 +331,14 @@ nav a:hover {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+}
+
+.populaires-cards .card-rating i {
+    color: var(--bleu);
+}
+
+.populaires-cards .card-rating .neutral-star {
+    color: #DADADA;
 }
 
 /* FIN DES HEBERGEMENTS & POPULAIRES */
