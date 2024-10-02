@@ -57,9 +57,17 @@ a {
     margin-bottom: 30px;
 }
 
+.header-page #logo {
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    height: 20px;
+    padding: 30px 50px 30px 0;
+}
+
 nav {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     gap: 50px;
     font-size: 16px;
     margin-top: 5px;
@@ -68,7 +76,7 @@ nav {
 nav a {
     font-size: 16px;
     font-weight: 400;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
     text-decoration: none;
     color: var(--noir);
     padding-top: 20px;
@@ -79,15 +87,6 @@ nav a:hover {
     color: var(--bleu);
     border-top: 2px solid var(--bleu);
     padding-top: 18px;
-}
-
-#logo {
-    height: 20px;
-    width: 60px;
-}
-
-.header-page #logo {
-    padding: 30px;
 }
 
 /* MAIN */
@@ -519,6 +518,10 @@ nav a:hover {
         align-items: center;
     }
 
+    .header-page #logo {
+        padding: 30px;
+    }
+
     .menu-header {
         width: 100%;
         padding: 0;
@@ -535,10 +538,9 @@ nav a:hover {
         border-top: 0;
         padding-bottom: 3px;
         padding-top: 0;
-
     }
 
-
+/*
     #rechercher-desktop {
         display: none;
     }
@@ -546,6 +548,8 @@ nav a:hover {
     #rechercher-mobile {
         display: block;
     }
+        */
+
 }
 
 /* FIN DES MEDIA QUERIES */
