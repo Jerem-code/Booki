@@ -3,6 +3,7 @@
 * {
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
+    margin: 0; /*Réinitialise les marges*/
 }
 
 :root {
@@ -17,7 +18,12 @@
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
-    margin: 0 auto; /* Centre le main conteneur */
+    /*margin: 0 auto; /* Centre le main conteneur */
+}
+
+body {
+    display: flex;
+    justify-content: center;
 }
 
 a {
@@ -36,11 +42,19 @@ a {
 
 /* HEADER */
 
-header {
+/*header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
+}   */
+
+.header-page {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    height: 79px;
+    margin-bottom: 30px;
 }
 
 nav {
@@ -70,6 +84,10 @@ nav a:hover {
 #logo {
     height: 20px;
     width: 60px;
+}
+
+.header-page #logo {
+    padding: 30px;
 }
 
 /* MAIN */
@@ -160,7 +178,8 @@ nav a:hover {
 .filtre-boutons {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    align-items: center;
+    gap: 15px; /* Espacement entre les boutons maquette Figma*/
 }
 
 .filtre-boutons i {
@@ -221,7 +240,7 @@ nav a:hover {
 }
 
 .hebergements {
-    width: 65%;
+    width: 67%;
     background-color: var(--gris);
     border-radius: 25px;
     padding: 30px;
@@ -279,7 +298,7 @@ nav a:hover {
 }
 
 .populaires {
-    width: 34%;
+    width: 32%;
     background-color: var(--gris);
     border-radius: 25px;
     padding: 30px;
@@ -297,6 +316,10 @@ nav a:hover {
     border-radius: 25px;
     padding: 5px;
     box-shadow: 5px 5px 10px #DADADA;
+}
+
+.card img {
+    object-fit: cover;
 }
 
 .populaires-cards .card {
@@ -358,7 +381,7 @@ nav a:hover {
 
 .activities-list {
     display: flex;
-    flex-wrap: flex-start; /* Les cartes restent sur la même ligne */
+    align-items: flex-start;
     gap: 30px; /* Espacement entre les cartes */
 }
 
@@ -420,10 +443,102 @@ nav a:hover {
 /* Tablettes */
 @media screen and (max-width: 1024px) and (min-width: 768px) {
 
+    .filtres-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .hebergements-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%; /* Largeur de la section hébergements */
+        margin-top: 50px; /* Espacement avec la section précédente */
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaires-cards .card {
+        width: 30%;
+    }
+
+    /*TODO Section activités*/
+
+    .activities-list {
+        display: flex;
+        height: 270px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .activities-card article {
+        width: 100%;
+    }
+
+    .activities-card img {
+        height: 200px;
 }
 
-/* Téléphones portables (<768px) */
-@media (max-width: 767px) {
+    .activities-card h3 {
+        width: 80%;
+        height: 20px;
+}
+
+/*Footer*/
+
+.footer-page {
+    gap: 30px; /*Défini sur la maquette Figma*/
+}
+
+}
+
+/* Téléphones portables (<768px) et min-width 320px pour garantir le responsive jusqu'a 320px*/
+@media screen and (max-width: 767px) {
+
+    .main-container {
+        padding: 0;
+    }
+
+    /*HEADER*/
+    .header-page {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-header {
+        width: 100%;
+        padding: 0;
+    }
+
+    .menu-header nav {
+        gap: 0;
+        padding: 0;
+    }
+
+    .menu-header a {
+        width: 50%;
+        border-bottom: 2px solid var(--gris);
+        border-top: 0;
+        padding-bottom: 3px;
+        padding-top: 0;
+
+    }
+
+
     #rechercher-desktop {
         display: none;
     }
