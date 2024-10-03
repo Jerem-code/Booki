@@ -438,6 +438,12 @@ nav a:hover {
 }
 /* FIN DU FOOTER */
 
+
+
+
+
+
+
 /* Media Queries */
 
 /* Tablettes */
@@ -475,7 +481,7 @@ nav a:hover {
         width: 30%;
     }
 
-    /*TODO Section activités*/
+    /*Section activités*/
 
     .activities-list {
         display: flex;
