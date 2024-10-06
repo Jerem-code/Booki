@@ -527,7 +527,7 @@ nav a:hover {
 }
 
 /* Téléphones portables (<768px) et min-width 320px pour garantir le responsive jusqu'a 320px*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) and (min-width: 320px) {
 
     .main-container {
         padding: 0;
@@ -634,7 +634,7 @@ nav a:hover {
         width: 100%;
         padding: 20px;
         margin-bottom: 35px;
-        background-color: transparent;
+        background-color: transparent; /* Suppression du fond gris pour coller à la maquette Figma*/
     }
 
     .hebergements-cartes {
