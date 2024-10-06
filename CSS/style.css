@@ -381,6 +381,20 @@ nav a:hover {
     color: #DADADA;
 }
 
+/* Gestion des liens pour desktop */
+.populaires-cards a.card {
+    display: flex;
+    width: 100%;
+    margin-top: 33px;
+    text-decoration: none; /* Pour enlever le soulignement des liens */
+    color: inherit; /* Pour conserver la couleur du texte */
+}
+
+.populaires-cards a.card article {
+    display: flex;
+    width: 100%;
+}
+
 /* FIN DES HEBERGEMENTS & POPULAIRES */
 
 /* ACTIVITES */
@@ -457,14 +471,10 @@ nav a:hover {
 
 
 
-
-
-
-
 /* Media Queries */
 
 /* Tablettes */
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (max-width: 1023px) and (min-width: 768px) {
 
     .filtres-section {
         display: flex;
@@ -497,6 +507,16 @@ nav a:hover {
 
     .populaires-cards .card {
         width: 30%;
+    }
+
+    /* Ajout de ces nouvelles règles pour le responsive mobile */
+    .populaires-cards a.card {
+        width: 30%;
+    }
+
+    .populaires-cards a.card article {
+        display: flex;
+        width: 100%;
     }
 
     /*Section activités*/
@@ -707,6 +727,17 @@ nav a:hover {
         gap: 15px; /* Espacement entre les liens */
     }
     
+
+    /* Ajout de ces nouvelles règles pour le responsive mobile */
+    .populaires-cards a.card {
+        width: 100%;
+        margin-top: 15px; /* Ajustez cette valeur selon vos besoins */
+    }
+
+    .populaires-cards a.card article {
+        display: flex;
+        width: 100%;
+    }
 }
 
 /* FIN DES MEDIA QUERIES */
