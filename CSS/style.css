@@ -194,6 +194,7 @@ nav a:hover {
 }
 
 .filtre-boutons > * {
+    color: var(--noir); /*Permet d'avoir le texte des boutons en noir*/
     background-color: white;
     border-radius: 25px;
     border: 2px solid var(--gris);
