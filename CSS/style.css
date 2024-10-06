@@ -141,7 +141,8 @@ nav a:hover {
     border: 1px solid #F2F2F2;
     border-left: none;
     flex-grow: 1;
-    max-width: 210px; /*Ancien max-width: 200px;*/
+    width: 100%;
+    /*max-width: 200px; */
     height: 100%; 
     box-sizing: border-box;
 }
@@ -479,12 +480,13 @@ nav a:hover {
 
     .hebergements {
         width: 100%; /* Largeur de la section hébergements */
-        margin-top: 50px; /* Espacement avec la section précédente */
+        margin-top: 0; /* Espacement avec la section précédente */
     }
 
     .populaires {
         width: 100%;
         margin-top: 50px;
+        margin-bottom: 33px; /* Ajout d'un espacement avec la section d'activités */
     }
 
     .populaires-cards {
@@ -643,6 +645,7 @@ nav a:hover {
         flex-direction: column;
         align-items: flex-start;
         gap: 15px; /* Espacement entre les cartes */
+        margin-top: 33px; /* Même valeur d'espacement que pour populaires et sa première carte*/
     }
 
     .carte-cliquable {
