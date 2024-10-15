@@ -21,7 +21,7 @@ ul {
 
 .main-container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1440px; /*Largeur max du container comme demandé dans le cahier des charges*/
   padding: 0 50px;
   box-sizing: border-box;
 }
